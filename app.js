@@ -60,6 +60,38 @@ decode('craft block argon meter bells brown croon droop');
 
 
 //  How Many days in a month
+function dOTM(strMonth, leap = false){
+  var days = 0;
+  if (strMonth === 'Feburuary' && leap === false){
+    days = '28';
+  } else if (strMonth === 'Feburuary' && leap === true){
+    days = '29';
+  } else {
+    switch (strMonth) {
+    case 'January':
+    case 'March':
+    case 'May':
+    case 'July':
+    case 'August':
+    case 'October':
+    case 'December':
+      days = '31';
+      break;
+    case 'April':
+    case 'June':
+    case 'September':
+    case 'November':
+      days = '30';
+      break;
+    default:
+      return 'Must provide a valid month.';
+    }
+    return(`${strMonth} has ${days} days`);
+  }
+
+  
+}
+console.log(dOTM('blah'));
 
 //  Rock Paper Scissors
 // r=1
