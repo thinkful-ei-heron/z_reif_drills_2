@@ -62,3 +62,26 @@ decode('craft block argon meter bells brown croon droop');
 //  How Many days in a month
 
 //  Rock Paper Scissors
+// r=1
+// p=2
+// s=3
+function RPS(playerInput){
+  const randomNo = Math.floor(Math.random() * 3) + 1;
+
+  if (randomNo === playerInput) {
+    console.log('tie');
+  } else if ( randomNo === 1 && playerInput === 2) {
+    console.log('player wins');
+  } else if (randomNo === 1 && playerInput === 3) {
+    console.log('computer wins');
+  } else if (randomNo === 2 && playerInput === 1) {
+    console.log('computer wins');
+  } else if (randomNo === 2 && playerInput === 3) {
+    console.log('player wins');
+  } else if (randomNo === 3 && playerInput === 1) {
+    console.log('player wins');
+  } else if (randomNo === 3 && playerInput === 2) {
+    console.log('computer wins');
+  }
+}
+console.log(RPS(1));
