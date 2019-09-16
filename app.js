@@ -64,7 +64,7 @@ decode('craft block argon meter bells brown croon droop');
 // use switch statement to return sentence showing how many days in that month
 
 function daysInMonth(month, leapYear) {
-  switch (new Date().getMonth()) {
+  switch (new month().getDay()) {
     case 1:
   }
    
