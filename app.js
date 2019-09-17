@@ -60,6 +60,7 @@ function decode(string) {
 decode('craft block argon meter bells brown croon droop');
 
 //  How Many days in a month
+<<<<<<< HEAD
 // function w/ 2 arguments month ('') and leapYear(boolean)
 // use switch statement to return sentence showing how many days in that month
 
@@ -86,6 +87,40 @@ function daysInMonth(month, leapYear) {
 }
 daysInMonth('april');
 return(${month} has ${days} days.);
+=======
+function dOTM(strMonth, leap = false){
+  var days = 0;
+  if (strMonth === 'Feburuary' && leap === false){
+    days = '28';
+  } else if (strMonth === 'Feburuary' && leap === true){
+    days = '29';
+  } else {
+    switch (strMonth) {
+    case 'January':
+    case 'March':
+    case 'May':
+    case 'July':
+    case 'August':
+    case 'October':
+    case 'December':
+      days = '31';
+      break;
+    case 'April':
+    case 'June':
+    case 'September':
+    case 'November':
+      days = '30';
+      break;
+    default:
+      return 'Must provide a valid month.';
+    }
+    return(`${strMonth} has ${days} days`);
+  }
+
+  
+}
+console.log(dOTM('blah'));
+>>>>>>> months
 
 //  Rock Paper Scissors
 // r=1
