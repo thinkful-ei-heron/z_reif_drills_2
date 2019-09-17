@@ -85,6 +85,7 @@ function daysInMonth(month, leapYear) {
   return text;
 }
 daysInMonth('april');
+return(${month} has ${days} days.);
 
 //  Rock Paper Scissors
 // r=1
