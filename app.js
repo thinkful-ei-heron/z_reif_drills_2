@@ -50,7 +50,7 @@ function decode(string) {
     } else if (words[i][0] === 'd') {
       returnString += words[i][4];
     } else {
-      // else return a space
+      // else return a test
       returnString += ' ';
     }
   }
