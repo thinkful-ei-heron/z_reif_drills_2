@@ -64,22 +64,27 @@ decode('craft block argon meter bells brown croon droop');
 // use switch statement to return sentence showing how many days in that month
 
 function daysInMonth(month, leapYear) {
-var text;
-  switch (month){
-    case 'january' || 'march' || 'may' || 'july' || 'august' || 'october' || 'december';
+  var text;
+  switch (month) {
+    case 'january' ||
+      'march' ||
+      'may' ||
+      'july' ||
+      'august' ||
+      'october' ||
+      'december':
       text = 'months with 31 days';
       break;
-    case 'april' || 'june' || 'september' || 'november';
+    case 'april' || 'june' || 'september' || 'november':
       text = 'months with 30 days';
       break;
-    case 'february';
+    case 'february':
       text = '28 unless leap year';
       break;
-    }
+  }
   return text;
 }
-daysInMonth('april')
-
+daysInMonth('april');
 
 //  Rock Paper Scissors
 // r=1
